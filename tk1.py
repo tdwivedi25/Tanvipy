@@ -1,0 +1,27 @@
+from tkinter import *
+root=Tk()
+root.title("My first window")
+label1=Label(root,text="One",bg="red",fg="white")
+label1.pack()
+label2=Label(root,text="Two",bg="blue",fg="white")
+label2.pack(fill=X)
+label3=Label(root,text="Three",bg="purple",fg="black")
+label3.pack(side=LEFT,fill=Y)
+button1=Button(root,text="click me!")
+button1.pack()
+
+topFrame=Frame(root)
+topFrame.pack()
+bottomFrame=Frame(root)
+bottomFrame.pack(side=BOTTOM)
+
+button1 = Button(topFrame,text="button1",fg="red")
+button2 = Button(topFrame,text="button2",fg="blue")
+button3 = Button(topFrame,text="button3",fg="green")
+button4 = Button(bottomFrame,text="button4",fg="purple")
+
+button1.pack()
+button2.pack()
+button3.pack()
+button4.pack()
+root.mainloop()
